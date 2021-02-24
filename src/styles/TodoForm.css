@@ -1,0 +1,62 @@
+.form-container {
+    padding: 10px;
+    justify-content: center;
+}
+
+.input-field {
+    padding: 14px 32px 14px 16px;
+    width: 55%;
+    font-size: 16px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: transparent;
+    border: 2px solid #5d0cff;
+}
+
+.todo-input::placeholder {
+    color: #e2e2e2;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.input-button {
+    padding: 17px 25px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(90deg,
+            rgba(93, 12, 255, 1) 0%,
+            rgba(155, 0, 250, 1) 100%);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    display: none;
+}
+
+.checkAll {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type="checkbox"]:checked+.checkAll:after {
+    content: '\2714';
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #fff;
+
+}
